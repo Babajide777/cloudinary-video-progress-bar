@@ -23,32 +23,12 @@ const cloudinaryVideoUpload = (file) => {
   });
 };
 
-const cloudinaryImageUpload = (file) => {
-  return new Promise((resolve, reject) => {
-    cloudinary.uploader
-      .upload(file)
-      .then((result) => {
-        resolve(result.public_id);
-      })
-      .catch((error) => {
-        reject(error);
-      });
-  });
-};
-
-const videoTransfrom = (vid, img) =>
+const videoTransfrom = (vid) =>
   cloudinary.video(vid, {
-    transformation: [
-      {
-        overlay: img,
-        width: 200,
-        height: 200,
-      },
-    ],
+    effect: "progressbar:color_072AC8:width_20:type_bar",
   });
 
 module.exports = {
   cloudinaryVideoUpload,
-  cloudinaryImageUpload,
   videoTransfrom,
 };

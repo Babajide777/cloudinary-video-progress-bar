@@ -1,15 +1,13 @@
 const {
   cloudinaryVideoUpload,
   videoTransfrom,
-  cloudinaryImageUpload,
 } = require("../config/cloudinary");
 
-const pictureUpload = async (req, res) => {
+const videoUpload = async (req, res) => {
   if (req.files !== undefined) {
     try {
       const vid = await cloudinaryVideoUpload(req.files.video.path);
-      const pic = await cloudinaryImageUpload(req.files.picture.path);
-      const transformedVid = videoTransfrom(vid, pic);
+      const transformedVid = videoTransfrom(vid);
       res.status(200).json({
         sucess: true,
         video: transformedVid,
@@ -24,5 +22,5 @@ const pictureUpload = async (req, res) => {
 };
 
 module.exports = {
-  pictureUpload,
+  videoUpload,
 };
