@@ -18,6 +18,11 @@ const videoUpload = async (req, res) => {
         error,
       });
     }
+  } else {
+    res.status(400).json({
+      sucess: false,
+      error: "No image was uploaded",
+    });
   }
 };
 

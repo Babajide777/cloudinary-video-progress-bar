@@ -1,7 +1,7 @@
 {
-  "name": "cloudinary-overlay",
+  "name": "cloudinary-video-progress-bar",
   "version": "1.0.0",
-  "description": "cloudinary video overlay",
+  "description": "cloudinary video progress bar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Babajide777/cloudinary-overlay.git"
+    "url": "git+https://github.com/Babajide777/cloudinary-video-progress-bar.git"
   },
   "keywords": [
     "cloudinary",
     "media",
     "video",
-    "overlay"
+    "progress-bar"
   ],
   "author": "Oyafemi Babajide",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Babajide777/cloudinary-overlay/issues"
+    "url": "https://github.com/Babajide777/cloudinary-video-progress-bar/issues"
   },
-  "homepage": "https://github.com/Babajide777/cloudinary-overlay#readme",
+  "homepage": "https://github.com/Babajide777/cloudinary-video-progress-bar#readme",
   "dependencies": {
     "cloudinary": "^1.32.0",
     "dotenv": "^16.0.3",

@@ -1,6 +1,6 @@
-# CLOUDINARY VIDEO OVERLAY TUTORIAL
+# CLOUDINARY VIDEO PROGRESS BAR TUTORIAL
 
-This tutorial teaches you how to create video overlays using Cloudinary.
+This tutorial teaches you how to create video progress bars using Cloudinary.
 
 ## Authors
 
@@ -8,10 +8,10 @@ This tutorial teaches you how to create video overlays using Cloudinary.
 
 ## API Reference
 
-#### Post details to upload a video and a picture.
+#### Post details to upload a VIDEO.
 
 ```http
-  POST /api/contact
+  POST /upload
 ```
 
 ## Documentation
@@ -64,13 +64,13 @@ If you have any feedback, please reach out to me at j.oyafemi@gmail.com
 Clone the project
 
 ```bash
-  git clone https://github.com/Babajide777/cloudinary-overlay.git
+  git clone https://github.com/Babajide777/cloudinary-video-progress-bar.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd cloudinary-overlay
+  cd cloudinary-video-progress-bar
 ```
 
 Install dependencies
